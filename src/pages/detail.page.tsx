@@ -1,4 +1,5 @@
-import { CloseButton, IconButton } from "@chakra-ui/react";
+import { IconButton, Icon } from "@chakra-ui/react";
+import { FaTimes } from 'react-icons/fa'
 import { useNavigate } from "react-router-dom";
 import { useCallback } from "react";
 import moment from "moment"
@@ -21,8 +22,7 @@ const DetailPage = () => {
             <div className="flex justify-between items-center">
                 <h1 className="text-2xl my-8">{"title.dummy"}</h1>
                 <IconButton aria-label="Back" onClick={routeToBack}>
-                    ×
-                    <CloseButton />
+                    <Icon as={FaTimes} />
                 </IconButton>
             </div>
             <div className="flex justify-between items-center">
